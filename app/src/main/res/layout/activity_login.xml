@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/side_nav_bar"
+        tools:context=".activities.LoginActivity"
+        android:gravity="center"
+>
+    <android.support.v7.widget.CardView android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:backgroundTint="#ccffffff"
+                                        android:layout_margin="48dp"
+
+    >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:padding="16dp"
+                      android:orientation="vertical"
+        >
+            <ImageView android:layout_width="match_parent"
+                       android:layout_height="48dp"
+                       android:src="@drawable/logogreen"
+            />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toko-tokoan"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textAlignment="center"
+            />
+            <Space android:layout_width="match_parent" android:layout_height="24dp"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textSize="18sp"
+                    app:met_baseColor="@color/colorPrimaryDark"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorAccent"
+                    app:met_singleLineEllipsis="true"
+                    android:id="@+id/log_user"
+                    app:met_underlineColor="@color/colorAccent"
+                    app:met_textColorHint="@color/colorAccent"
+                    app:met_floatingLabelAnimating="true"
+                    app:met_floatingLabelTextSize="14sp"
+                    app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                    app:met_floatingLabelText="Username"
+                    app:met_bottomTextSize="0sp"
+
+            />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:textSize="18sp"
+                    app:met_baseColor="@color/colorPrimaryDark"
+                    app:met_floatingLabel="highlight"
+                    app:met_primaryColor="@color/colorAccent"
+                    app:met_singleLineEllipsis="true"
+                    android:id="@+id/log_password"
+                    app:met_floatingLabelTextSize="14sp"
+                    app:met_underlineColor="@color/colorAccent"
+                    app:met_textColorHint="@color/colorAccent"
+                    app:met_floatingLabelTextColor="@color/colorPrimaryDark"
+                    app:met_bottomTextSize="0sp"
+                    android:inputType="textPassword"
+            />
+            <Space android:layout_width="match_parent" android:layout_height="12dp"/>
+            <Button android:id="@+id/bt_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/log_in"
+                    android:layout_marginHorizontal="24dp"
+                    tools:targetApi="o"/>
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="or"
+                      android:textAlignment="center"
+                      android:textColor="@color/colorAccent"
+            />
+            <Button android:id="@+id/bt_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:textColor="#fff"
+                    android:text="@string/register"
+                    android:layout_marginHorizontal="24dp"
+                    tools:targetApi="o"
+            />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
